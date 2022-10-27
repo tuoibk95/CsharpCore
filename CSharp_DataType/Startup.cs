@@ -119,6 +119,13 @@ namespace CSharp_DataType
             }
         }
 
+        public static void doString()
+        {
+            StringBuilder sb = new StringBuilder("LVT");
+            sb.Append(" is GOD...");
+            Console.WriteLine(sb);
+        }
+
         public static void Main(String[] args)
         {
             string str1 = "Hello World;";
@@ -136,6 +143,7 @@ namespace CSharp_DataType
             CompareTwoInteger(6, 6);
             SearchGTNN(5, 5, 5, 5);
             SapXep();
+            doString();
             Console.ReadLine();
         }
     }
