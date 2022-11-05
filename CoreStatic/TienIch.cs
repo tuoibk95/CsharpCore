@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CoreStatic
 {
-	internal class TienIch
+	public class TienIch
 	{
 		private string name;
 		private decimal price;
+		public string abc;
 
 		static TienIch()
 		{
