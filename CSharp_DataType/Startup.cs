@@ -119,7 +119,7 @@ namespace CSharp_DataType
             }
         }
 
-        public static void doString()
+        public static void DoString()
         {
             StringBuilder sb = new StringBuilder("LVT");
             sb.Append(" is GOD...");
