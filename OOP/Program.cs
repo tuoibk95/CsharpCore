@@ -1,5 +1,7 @@
 ﻿using System;
+using Variables;
 
+// Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
 namespace OOP
 {
     /// <summary>
@@ -12,7 +14,9 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            AutoImplementedProperty prog = new AutoImplementedProperty("Luc","Van Tien");
+            
+			Console.WriteLine(prog.GetFullName());
         }
     }
 }
