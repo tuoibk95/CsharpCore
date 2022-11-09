@@ -24,4 +24,15 @@ namespace Variables
 			return FirstName + " " + LastName;
 		}
 	}
+
+	/// <summary>
+	/// Extensions method
+	/// </summary>
+	public static class AutoImplementedPropertyExtensions
+	{
+		public static void Print(this AutoImplementedProperty student)
+		{
+			Console.WriteLine(student.ToString());
+		}
+	}
 }
