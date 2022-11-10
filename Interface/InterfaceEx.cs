@@ -13,20 +13,20 @@
 			Console.WriteLine(base.Age);
 		}
 
-		public static void Main()
-		{
-			InterfaceEx s = new InterfaceEx();
-			s.Speak();
-			s.Speak1();
-			AbstractClass s1 = new InterfaceEx();
-			s1.Speak1();
+		//public static void Main()
+		//{
+		//	InterfaceEx s = new InterfaceEx();
+		//	s.Speak();
+		//	s.Speak1();
+		//	AbstractClass s1 = new InterfaceEx();
+		//	s1.Speak1();
 
-			string a = "";
-			string b = string.Empty;
-			if (a == b)
-			{
-				Console.WriteLine("ss = ok");
-			}
-		}
+		//	string a = "";
+		//	string b = string.Empty;
+		//	if (a == b)
+		//	{
+		//		Console.WriteLine("ss = ok");
+		//	}
+		//}
 	}
 }
