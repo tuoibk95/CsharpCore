@@ -45,6 +45,10 @@ namespace OOP
             BoxingAndUnboxing.PerformsBoxing();
             BoxingAndUnboxing.CastingBoxed();
             NullableTypes.TestNullableTypes();
+
+            ValueTypes.TestValueChanged();
+            ReferenceTypes.TestReferenceType();
+            Hocsinh.TestReferenceTypes();
         }
     }
 }
