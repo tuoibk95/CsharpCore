@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-	interface ISpeak
+	public interface ISpeak
 	{
 		void Speak();
 	}

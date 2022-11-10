@@ -13,6 +13,20 @@ namespace OOP.DataTypes.TwoTypes
 	/// </summary>
 	public class ValueTypes
 	{
+		static void ChangedValue(int x)
+		{
+			x = 200;
+			Console.WriteLine(x);
+		}
+
+		public static void TestValueChanged()
+		{
+			int i = 100;
+			Console.WriteLine(i); // output 100
+			// Nếu giá trị được thay đổi trong 1 phương thức ChangedValue thì nó sẽ không ảnh hưởng đến biến trong phương thức khác
+			ChangedValue(i); // output 200
+			Console.WriteLine(i); // output 100
+		}
 		// C# 7.1 onwards
 		//int i = default; // 0
 		//float f = default;// 0
