@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP.ClassRelations
+namespace OOP.ClassRelations.Association
 {
     /// <summary>
     ///  Association Relationship: Mối quan hệ kết hợp được gọi là mối quan hệ sử dụng một "uses a" trong đó 1 lớp sử dụng 1 lớp khác để thực hiện 1 số hành động

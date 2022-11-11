@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OOP.ClassRelations
+namespace OOP.ClassRelations.Association
 {
     public class Student
     {
