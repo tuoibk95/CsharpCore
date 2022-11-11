@@ -44,33 +44,33 @@ namespace Inheritance_ex
 	/// Trước khi khởi tạo object của class con thì object của class cha được khởi tạo => bản thân object của class con có chứa trong nó là object cha
 	/// Object cha được truy cập từ object con thông qua từ khóa base => từ khóa base cũng có thể truy xuất các thành viên của lớp cha.
 	/// </summary>
-	class MainClass
-	{
-		public static void Main(string[] args)
-		{
-			Console.WriteLine("Bird:");
-			Bird bird = new Bird(50) { Weight = 100 };
-			bird.Feed();
-			Console.WriteLine($"Weight: {bird.Weight}");
-			bird.Fly();
+	//class MainClass
+	//{
+	//	public static void Main(string[] args)
+	//	{
+	//		Console.WriteLine("Bird:");
+	//		Bird bird = new Bird(50) { Weight = 100 };
+	//		bird.Feed();
+	//		Console.WriteLine($"Weight: {bird.Weight}");
+	//		bird.Fly();
 
-			Console.WriteLine($"Parrot: ");
-			Parrot parrot = new Parrot(200);
-			parrot.Feed();
-			Console.WriteLine($"Weight: {parrot.Weight}");
-			parrot.Fly();
-			parrot.Speak();
+	//		Console.WriteLine($"Parrot: ");
+	//		Parrot parrot = new Parrot(200);
+	//		parrot.Feed();
+	//		Console.WriteLine($"Weight: {parrot.Weight}");
+	//		parrot.Fly();
+	//		parrot.Speak();
 
-			// Hàm tạo không được kế thừa mà hàm tạo của lớp cha được gọi tự động(nếu là hàm tạo không tham số)
-			// OR được gọi từ hàm tạo của lớp con (nếu là hàm tạo có tham số)
-			Console.WriteLine($"Cockatoo: ");
-			Cockatoo cockatoo = new Cockatoo() { Weight = 300 };
-			cockatoo.Feed();
-			Console.WriteLine($"Weight: {cockatoo.Weight}");
-			cockatoo.Fly();
-			cockatoo.Speak();
-			cockatoo.Dance();
-			Console.ReadKey();
-		}
-	}
+	//		// Hàm tạo không được kế thừa mà hàm tạo của lớp cha được gọi tự động(nếu là hàm tạo không tham số)
+	//		// OR được gọi từ hàm tạo của lớp con (nếu là hàm tạo có tham số)
+	//		Console.WriteLine($"Cockatoo: ");
+	//		Cockatoo cockatoo = new Cockatoo() { Weight = 300 };
+	//		cockatoo.Feed();
+	//		Console.WriteLine($"Weight: {cockatoo.Weight}");
+	//		cockatoo.Fly();
+	//		cockatoo.Speak();
+	//		cockatoo.Dance();
+	//		Console.ReadKey();
+	//	}
+	//}
 }
