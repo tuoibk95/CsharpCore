@@ -17,15 +17,29 @@ namespace polymorphismClass
 	/// </summary>
 	public class RunTimePolymorphism
 	{
+		public static void Display(Person per)
+		{
+			per.Greet();
+		}
+
+		// Static method không thể bị ghi đè (override)
 		public static void TestRunTimePolymorphism()
 		{
-			// C# sẽ gọi phương thức tùy vào kiểu đối tượng chứ không phải kiểu của biến
+			// C# sẽ gọi phương thức tùy vào type of the object Person() chứ không phải variable type of the variable Person
 			Person person = new Person();
-			person.Greet();
 			Person person1 = new Employee();
-			person1.Greet();
 			Employee employee = new Employee();
+			person.Greet();
+			person1.Greet();
 			employee.Greet();
+			Console.WriteLine("===========================");
+			Display(person);
+			Display(person1);
+			Display(employee);
+			Console.WriteLine("===========================");
+			person.HiddingMethod();
+			person1.HiddingMethod();
+			employee.HiddingMethod();
 		}
 	}
 }

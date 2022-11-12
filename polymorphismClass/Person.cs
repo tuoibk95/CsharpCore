@@ -12,5 +12,10 @@ namespace polymorphismClass
 		{
 			Console.WriteLine("Hi! I am a person.");
 		}
+
+		public virtual void HiddingMethod()
+		{
+			Console.WriteLine("Hidding method base");
+		}
 	}
 }

@@ -12,5 +12,10 @@ namespace polymorphismClass
 		{
 			Console.WriteLine("Hello! I am an employee.");
 		}
+
+		public new void HiddingMethod()
+		{
+			Console.WriteLine("Hidding method Devired");
+		}
 	}
 }
