@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace polymorphismClass
 {
-	internal class Program
+	public class Program
 	{
+		static Program(){
+			Console.WriteLine("Static block!");
+		}
 		public static void Main(string[] args)
 		{
 			Animal cat = new Cat();
@@ -16,6 +19,7 @@ namespace polymorphismClass
 			//  thì đối tượng tham chiếu đến vùng nhớ của lớp nào sẽ được gọi đúng phương thức của lớp đó.
 			cat.Speak();
 			dog.Speak();
+			RunTimePolymorphism.TestRunTimePolymorphism();
 		}
 	}
 }
