@@ -89,7 +89,7 @@ namespace OOP.Exceptions
     [Serializable]
     class InvalidStudentNameException : Exception
     {
-        static void Main(string[] args)
+        static void Test(string[] args)
         {
             Student newStudent = null;
 

@@ -9,6 +9,8 @@ using OOP.DataTypes.NullableTypes;
 using OOP.DataTypes.TwoTypes;
 using OOP.Indexers;
 using OOP.Exceptions;
+using OOP.Delegates;
+using MulticastDelegate = OOP.Delegates.MulticastDelegate;
 
 // Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
 namespace OOP
@@ -55,7 +57,13 @@ namespace OOP
             ClassIndexers.TestIndexers();
             ClassIndexers.TestOverloadIndexers();
             GenericIndexers<int>.TestGenericIndexers();
-            AppException.TestException();
+//            AppException.TestException();
+
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            ClassA.TestDelegate();
+			MulticastDelegate.TestMulticastDelegate();
+			MulticastDelegate.TestIntMulticastDelegate();
+            GenericDelegate.TestGenericDelegate();
         }
     }
 }

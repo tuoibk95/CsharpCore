@@ -8,19 +8,19 @@ namespace DelegateEvents
 {
 	public class DelegateEventDotNet
 	{
-		static void Main(string[] args)
-		{
-			HocSinh hs = new HocSinh();
-			hs.NameChanged += Hs_NameChanged;
-			hs.Name = "LVT";
-			hs.Name = "LVX";
-			Console.ReadLine();
-		}
+		//static void Main(string[] args)
+		//{
+		//	HocSinh hs = new HocSinh();
+		//	hs.NameChanged += Hs_NameChanged;
+		//	hs.Name = "LVT";
+		//	hs.Name = "LVX";
+		//	Console.ReadLine();
+		//}
 
-		private static void Hs_NameChanged(object? sender, NameChangedEventArgs e)
-		{
-			Console.WriteLine("Name changed ..." + e.Name);
-		}
+		//private static void Hs_NameChanged(object? sender, NameChangedEventArgs e)
+		//{
+		//	Console.WriteLine("Name changed ..." + e.Name);
+		//}
 	}
 
 	public class HocSinh
