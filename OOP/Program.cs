@@ -7,6 +7,8 @@ using OOP.DataTypes.AnonymousTypes;
 using OOP.DataTypes.DynamicTypes;
 using OOP.DataTypes.NullableTypes;
 using OOP.DataTypes.TwoTypes;
+using OOP.Indexers;
+using OOP.Exceptions;
 
 // Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
 namespace OOP
@@ -49,6 +51,11 @@ namespace OOP
             ValueTypes.TestValueChanged();
             ReferenceTypes.TestReferenceType();
             Hocsinh.TestReferenceTypes();
+
+            ClassIndexers.TestIndexers();
+            ClassIndexers.TestOverloadIndexers();
+            GenericIndexers<int>.TestGenericIndexers();
+            AppException.TestException();
         }
     }
 }
