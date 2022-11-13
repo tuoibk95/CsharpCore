@@ -10,6 +10,9 @@ using OOP.DataTypes.TwoTypes;
 using OOP.Indexers;
 using OOP.Exceptions;
 using OOP.Delegates;
+using OOP.Delegates.FuncDelegate;
+using OOP.Delegates.ActionDelegate;
+using OOP.Delegates.PredicateDelegate;
 using MulticastDelegate = OOP.Delegates.MulticastDelegate;
 
 // Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
@@ -64,6 +67,13 @@ namespace OOP
 			MulticastDelegate.TestMulticastDelegate();
 			MulticastDelegate.TestIntMulticastDelegate();
             GenericDelegate.TestGenericDelegate();
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            FuncDelegate.TestFunc();
+            FuncDelegate.TestFunc1();
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            ActionDelegate.TestActionDelegate();
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            PredicateDelegate.TestPredicate();
         }
     }
 }

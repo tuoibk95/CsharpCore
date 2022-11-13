@@ -8,10 +8,15 @@ namespace CsharpCore.Delegate
 //		public delegate int TinhToan(int x, int y);
 		protected internal void TinhToanUseDelegate()
 		{
-			TinhToan tinhTong = (int x, int y) =>
+			TinhToan tinhTong = delegate (int x, int y)
 			{
-				return x + y;
+				return x + y; 
 			};
+			// Các kiểu viết ngắn của  delegate
+//			TinhToan tinhTong1 = (int x, int y) => { return x + y; };
+//			TinhToan tinhTong2 =  (x,y) => { x + y; };
+//			TinhToan tinhTong3 =  (x,y) => x + y;
+
 			int ketQua = tinhTong(3, 2);
 			Console.WriteLine(ketQua);
 		}
