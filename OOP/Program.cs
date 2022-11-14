@@ -14,6 +14,7 @@ using OOP.Delegates.FuncDelegate;
 using OOP.Delegates.ActionDelegate;
 using OOP.Delegates.PredicateDelegate;
 using MulticastDelegate = OOP.Delegates.MulticastDelegate;
+using OOP.Events;
 
 // Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
 namespace OOP
@@ -74,6 +75,12 @@ namespace OOP
             ActionDelegate.TestActionDelegate();
 			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             PredicateDelegate.TestPredicate();
+            MulticastDelegate.ABC();
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            ProcessBusinessLogic.TestEvent();
+            EventHandlerDelegate.TestEventHandler();
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+            EventDataHanlder.TestEventDataHanlder();
         }
     }
 }
