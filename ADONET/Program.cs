@@ -1,4 +1,5 @@
 ﻿using System;
+// http://asp.net-informations.com/ado.net/ado-architecture.htm
 using System.Data;
 using System.Data.SqlClient;
 
@@ -36,23 +37,29 @@ namespace Microsoft.AdoNet.DataSetDemo
                 // Fill the DataSet.
                 productsAdapter.Fill(dataSet);
 
-                // For each table in the DataSet, print the row values.
-                foreach (DataTable table in dataSet.Tables)
-                {
-                    foreach (DataRow row in table.Rows)
-                    {
-                        foreach (DataColumn column in table.Columns)
-                        {
-							Console.Write(column.ColumnName.ToString() + ": ");
-                            Console.WriteLine(row[column]);
-                        }
-						Console.WriteLine("++++++++++++++++++++++++++++++++++");
-                    }
-                }
+                PrintData(dataSet);
 
                 // Close the connection.
                 connection.Close();
                 Console.WriteLine("The SqlConnection is closed.");
+            }
+        }
+
+        public static void PrintData(DataSet dataSet)
+		{
+            // For each table in the DataSet, print the row values.
+            foreach (DataTable table in dataSet.Tables)
+            {
+                Console.WriteLine("Table name is: " + table.TableName);
+                foreach (DataRow row in table.Rows)
+                {
+                    foreach (DataColumn column in table.Columns)
+                    {
+                        Console.Write(column.ColumnName.ToString() + ": ");
+                        Console.WriteLine(row[column]);
+                    }
+                    Console.WriteLine("++++++++++++++++++++++++++++++++++");
+                }
             }
         }
 

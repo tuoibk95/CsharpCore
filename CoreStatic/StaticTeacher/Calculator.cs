@@ -30,5 +30,23 @@ namespace CoreStatic.StaticTeacher
         {
             _resultStorage = result;
         }
+        /// <summary>
+        /// Extension method: Ở trong static class 
+        /// </summary>
+        /// <param name="i">this int i : tham số đầu tiên của extension method chỉ định kiểu mà nó sẽ chuyển sang toán tử, đứng trước từ khóa this</param>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public static bool IsGreaterThan(this int i, int value)
+		{
+            return i > value;
+		}
+
+        // using namespace là có thể sử dụng được extension method
+        public static void TestExtensionMethod()
+		{
+            int i = 100;
+            bool b = i.IsGreaterThan(101);
+			Console.WriteLine(b);
+		}
     }
 }

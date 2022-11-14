@@ -63,7 +63,7 @@ namespace OOP
             GenericIndexers<int>.TestGenericIndexers();
 //            AppException.TestException();
 
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
+			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++Test delegate");
             ClassA.TestDelegate();
 			MulticastDelegate.TestMulticastDelegate();
 			MulticastDelegate.TestIntMulticastDelegate();
