@@ -59,7 +59,7 @@ namespace OOP.Exceptions
                 Console.Write("Error occurred! Please try again.");
             }
             /// Không được có nhiều khối finally
-            /// Không được có có từ khóa continue, break, return
+            /// Không được có từ khóa continue, break, return
 			finally
 			{
 				Console.WriteLine("Clean up");

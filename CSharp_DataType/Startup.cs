@@ -143,7 +143,7 @@ namespace CSharp_DataType
             CompareTwoInteger(6, 6);
             SearchGTNN(5, 5, 5, 5);
             SapXep();
-            doString();
+            DoString();
             Console.ReadLine();
         }
     }
