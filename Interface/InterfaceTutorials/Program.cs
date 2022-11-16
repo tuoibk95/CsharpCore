@@ -18,7 +18,7 @@ namespace Interface.InterfaceTutorials
 			ifile.DisplayName();
 			ifile.ABCD();
 			fileInfo.ReadFile();
-			fileInfo.WriteFile("content");
+			ifile.WriteFile("content");
 		}
 	}
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
+	// Không thể tạo được instance của Abstract class & interface
 	public abstract class AbstractClass
 	{
 		protected int Age = 10;
