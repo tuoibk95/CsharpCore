@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="LiskovSubstitutionPrinciple\" />
     <Folder Include="InterfaceSegregationPrinciple\" />
-    <Folder Include="DependencyInversionPrinciple\" />
     <Folder Include="OpenClosedPrinciple\" />
   </ItemGroup>
 
