@@ -11,7 +11,7 @@ namespace Array
     {
         private T[] array;
         private int capacity = 0;
-        private int size = 5;
+        private int size = 0;
 
         public DynamicArray()
         {
@@ -20,7 +20,7 @@ namespace Array
 
         public DynamicArray(int capacity)
         {
-            if (capacity < 0 )
+            if (capacity < 0)
             {
                 throw new ArgumentException("capacity can not  be  negative " + capacity);
             }
@@ -28,7 +28,7 @@ namespace Array
             {
                 this.capacity = capacity;
             }
-            array = new T[capacity];
+            array = (T[])new T[capacity];
         }
 
         public int Size()
@@ -90,8 +90,8 @@ namespace Array
             }
             else
             {
-                T[] newArray = new T[size - 1];
-                for (int i = 0;i < index; i++)
+                T[] newArray = (T[])new T[size - 1];
+                for (int i = 0; i < index; i++)
                 {
                     newArray[i] = (T)array[i];
                 }
@@ -102,14 +102,47 @@ namespace Array
             }
         }
 
-        public IEnumerator<T> GetEnumerator()
+        public void Remove(Object obj)
+		{
+            int removeIndex = IndexOf(obj);
+            RemoveAt(removeIndex);
+		}
+
+        public int IndexOf(Object obj)
+		{
+			for (int i = 0; i < size; i++)
+			{
+				if (obj == null)
+				{
+					if (array[i] == null)
+					{
+                        return i;
+					}
+				}
+				else
+				{
+					if (obj.Equals(array[i]))
+					{
+                        return i;
+					}
+				}
+			}
+            return -1;
+		}
+
+        public bool Contains(Object obj)
         {
-            throw new NotImplementedException();
+            return IndexOf(obj) != 1;
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return null;
         }
+
+		IEnumerator IEnumerable.GetEnumerator()
+		{
+			throw new NotImplementedException();
+		}
     }
 }

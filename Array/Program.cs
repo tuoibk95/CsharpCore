@@ -11,11 +11,11 @@ namespace Array
     {
         public static void Main(String[] args)
         {
-            DynamicArray<string> dynArray = new DynamicArray<string>();
-            dynArray.Add("L");
-            dynArray.Add("V");
-            dynArray.Add("T");
-            Console.WriteLine(dynArray.ToString());
+            DynamicArray<string> dynamicArray = new DynamicArray<string>();
+            dynamicArray.Add("L");
+            dynamicArray.Add("V");
+            dynamicArray.Add("T");
+            Console.WriteLine(dynamicArray.ToString());
         }
     }
 }
