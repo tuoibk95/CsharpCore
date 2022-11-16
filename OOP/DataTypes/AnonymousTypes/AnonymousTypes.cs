@@ -4,6 +4,9 @@ using System.Text;
 
 namespace OOP.DataTypes.AnonymousTypes
 {
+	/// <summary>
+	/// Các thuộc tính của anonymous types là read-only và không được khởi tạo với null
+	/// </summary>
 	internal class AnonymousTypes
 	{
 		public static void Test()

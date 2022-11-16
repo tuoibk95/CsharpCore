@@ -9,6 +9,8 @@ namespace OOP.DataTypes.DynamicTypes
 	/// </summary>
 	internal class DynamicTypes
 	{
+		// Tránh kiểm tra kiểu compile time, Nó kiểu giải quyết at run time
+		// kiểu dynamic thay đổi kiểu at run time dựa trên giá trị gán.
 		public static void TestDynamicType()
 		{
 			dynamic MyDynamicVar = 100;

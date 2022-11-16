@@ -7,7 +7,7 @@ namespace OOP.Delegates
 	public delegate void MyDelegate(string msg);
 	public delegate int MyDelegate1();
 	public delegate void AnonymousMethod(int i);
-	public class MulticastDelegate
+	public class MulticastDelegates
 	{
 		public static void TestMulticastDelegate()
 		{

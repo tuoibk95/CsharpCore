@@ -59,6 +59,9 @@ namespace CsharpCore
 			//ArrayListEx arrayList = new ArrayListEx();
 			//arrayList.toArrayListEx();
 
+			ListEx list = new ListEx();
+			list.ToList();
+
 			//HashtableEx hashtableEx = new HashtableEx();
 			//hashtableEx.toHashtableEx();
 
@@ -71,8 +74,8 @@ namespace CsharpCore
 			//QueueEx queueEx = new QueueEx();
 			//queueEx.toQueue();
 
-			RefOutKeyword refOutKeyword = new RefOutKeyword();
-			refOutKeyword.toRefOutKeyword();
+			//RefOutKeyword refOutKeyword = new RefOutKeyword();
+			//refOutKeyword.toRefOutKeyword();
 
 			//GenericEx genericEx = new GenericEx();
 			//genericEx.change();
