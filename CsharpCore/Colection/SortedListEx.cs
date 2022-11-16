@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace CsharpCore.Colection
 {
 	/// <summary>
-	/// Là 1 Hashtable nhưng các giá trị được sắp xếp theo Key. Việc sắp xếp này được thực hiện auto mỗi khi thêm 1 phần tử mới vào SortedList
+	/// Là 1 Hashtable nhưng các giá trị được sắp xếp theo Key.
+	/// Việc sắp xếp này được thực hiện auto mỗi khi thêm 1 phần tử mới vào SortedList
 	/// Có thể truy xuất phần tử trong SortedList thông qua Key(Hashtable), chỉ số phần tử (ArrayList) => Là sự kết hợp của cả 2
 	/// </summary>
 	internal class SortedListEx

@@ -11,12 +11,17 @@ namespace Interface.InterfaceTutorials
 	/// Default interface methods with implementation body are supported from C# 8.0.
 	/// An interface cannot contain constructors and fields.
 	/// Interface members are by default abstract and public.
-	/// C# 8.0 use access modifier
+	/// cannot apply access modifiers to interface members.
+	/// C# 8.0 onwards, you may use private, protected, internal, public, virtual, abstract, sealed, static, extern, and partial modifiers on certain conditions.
+	/// An interface can inherit one or more interfaces.
 	/// </summary>
 	public interface IFile
 	{
+		// Interface cannot contain fields, and auto-implemented properties.
 		void ReadFile();
 		void WriteFile(string text);
+
+		// Không thể kế thừa default method => k thể truy cập khi dùng instance
 		void DisplayName() // default method of interface
 		{
 			Console.WriteLine("IFile C# 8.0 added suport for virtual extension method");

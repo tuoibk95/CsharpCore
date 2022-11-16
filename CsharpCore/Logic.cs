@@ -59,11 +59,11 @@ namespace CsharpCore
 			//ArrayListEx arrayList = new ArrayListEx();
 			//arrayList.toArrayListEx();
 
-			ListEx list = new ListEx();
-			list.ToList();
+			//ListEx list = new ListEx();
+			//list.ToList();
 
-			//HashtableEx hashtableEx = new HashtableEx();
-			//hashtableEx.toHashtableEx();
+			HashtableEx hashtableEx = new HashtableEx();
+			hashtableEx.toHashtableEx();
 
 			//SortedListEx sortedListEx = new SortedListEx();
 			//sortedListEx.toSortedList();

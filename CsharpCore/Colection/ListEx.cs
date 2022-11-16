@@ -15,6 +15,7 @@ namespace CsharpCore.Colection
 	{
 		public void ToList()
 		{
+			#region
 			List<string> list = new List<string>();
 			list.Add("Free");
 			list.Add("Education");
@@ -34,6 +35,7 @@ namespace CsharpCore.Colection
 			{
 				Console.WriteLine("Không chứa.");
 			}
+			#endregion
 
 			#region adding elements using collection-initializer syntax
 			var bigCities = new List<string>()
@@ -68,6 +70,6 @@ namespace CsharpCore.Colection
 	public class Student
 	{
 		public int Id { get; set; }
-		public string Name { get; set; }
+		public string? Name { get; set; }
 	}
 }
