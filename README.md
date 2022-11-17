@@ -1,3 +1,7 @@
+# Csharp Core Document
+
+
+
 # GIT
 Quản lý source với GIT
 
