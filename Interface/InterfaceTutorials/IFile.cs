@@ -18,6 +18,7 @@ namespace Interface.InterfaceTutorials
 	public interface IFile
 	{
 		// Interface cannot contain fields, and auto-implemented properties.
+		public string FileName { get; set; }
 		void ReadFile();
 		void WriteFile(string text);
 
