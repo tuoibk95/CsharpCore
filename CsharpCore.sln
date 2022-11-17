@@ -35,6 +35,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID", "SOLID\SOLID.csproj", "{5DB0CCFF-D54C-4843-98BB-0B1AE78C8BFE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D1766553-C060-4808-90A0-F5086A48BE57}"
+	ProjectSection(SolutionItems) = preProject
+		GIT.txt = GIT.txt
+		SOLID\Quản lý source với GIT.docx = SOLID\Quản lý source với GIT.docx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
