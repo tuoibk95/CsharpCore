@@ -52,34 +52,26 @@ namespace OOP
             BoxingAndUnboxing.PerformsBoxing();
             BoxingAndUnboxing.CastingBoxed();
             NullableTypes.TestNullableTypes();
-
             ValueTypes.TestValueChanged();
             ReferenceTypes.TestReferenceType();
             Hocsinh.TestReferenceTypes();
-
             ClassIndexers.TestIndexers();
             ClassIndexers.TestOverloadIndexers();
             GenericIndexers<int>.TestGenericIndexers();
 //            AppException.TestException();
-
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++Test delegate");
             ClassA.TestDelegate();
 			MulticastDelegates.TestMulticastDelegate();
 			MulticastDelegates.TestIntMulticastDelegate();
             MulticastDelegates.ABC();
             GenericDelegate.TestGenericDelegate();
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             FuncDelegate.TestFunc();
             FuncDelegate.TestFunc1();
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             ActionDelegate.TestActionDelegate();
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             PredicateDelegate.TestPredicate();
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             ProcessBusinessLogic.TestEvent();
             EventHandlerDelegate.TestEventHandler();
-			Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++");
             EventDataHanlder.TestEventDataHanlder();
+            ConstantReadonlyStatic.TestConstant();
         }
     }
 }

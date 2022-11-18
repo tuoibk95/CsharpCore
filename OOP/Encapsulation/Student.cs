@@ -37,14 +37,15 @@ namespace OOP.Encapsulation
             get { return _lastName; }
             set { _lastName = value; }
         }
-		#endregion
 
 		public string FullName
         {
             get { return _firstName + " " + _lastName; }
         }
+		#endregion
 
-        public void Save()
+		#region methods
+		public void Save()
         {
             //write code to save student 
         }
@@ -65,5 +66,6 @@ namespace OOP.Encapsulation
         {
             //write code to return all subscribed courses
         }
-    }
+		#endregion
+	}
 }

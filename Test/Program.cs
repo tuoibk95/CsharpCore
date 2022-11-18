@@ -22,6 +22,12 @@ namespace Test
 
 			Compare compare = new Compare();
 			compare.CompareEqualAndBB();
+
+			int? a = null;
+			a = a != null ? a : 0;
+			// Viết gọn với ??
+			a = a ?? 0;
+			Console.WriteLine(a);
 		}
 	}
 }

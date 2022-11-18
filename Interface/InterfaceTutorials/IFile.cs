@@ -23,7 +23,7 @@ namespace Interface.InterfaceTutorials
 		void WriteFile(string text);
 
 		// Không thể kế thừa default method => k thể truy cập khi dùng instance
-		void DisplayName() // default method of interface
+		void DisplayName() // default method of interface: Có thể implementation bên trong method
 		{
 			Console.WriteLine("IFile C# 8.0 added suport for virtual extension method");
 		}
