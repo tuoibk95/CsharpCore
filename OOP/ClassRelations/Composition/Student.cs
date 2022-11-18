@@ -11,7 +11,8 @@ namespace OOP.ClassRelations.Composition
     /// </summary>
     public class Student
     {
-        public int StudentId { get; set; }
+		#region Fields
+		public int StudentId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
@@ -20,5 +21,6 @@ namespace OOP.ClassRelations.Composition
         public Address HomeAddress { get; set; }
         // Lớp Student chứa AddressId peoperty của lớp Address thay vì 1 Instance để tạo thành Composition relationship
         public int AddressId { get; set; }
-    }
+		#endregion
+	}
 }

@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 namespace CoreStatic.StaticTeacher
 {
     /// <summary>
-    /// cannot create an object of a static class and cannot access static members using an object.
-    /// Static là không thể được khởi tạo instance, all trong static class must static
-    /// A static class cannot contain instance members and constructors.
-    /// Indexers and destructors cannot be static
-    /// var cannot be used to define static members.
-    /// * Static classes are sealed class and therefore, cannot be inherited.
-    /// A static class remains in memory for the lifetime of the application domain in which your program resides.
+    /// 1 - Static classes cannot be instantiated.
+    /// 2 - All the members of a static class must be static; otherwise the compiler will give an error.
+    /// 3 - A static class can contain static variables, static methods, static properties, static operators, static events, and static constructors.
+    /// 4 - A static class cannot contain instance members and constructors.
+    /// 5 - Indexers and destructors cannot be static
+    /// 6 - var cannot be used to define static members. You must specify a type of member explicitly after the static keyword.
+    /// 7 - Static classes are sealed class and therefore, cannot be inherited.
+    /// 8 - Static class members can be accessed using ClassName.MemberName. cannot access static members using an object.
+    /// 9 - * A static class remains in memory for the lifetime of the application domain in which your program resides.
     /// </summary>
     public static class Calculator
     {

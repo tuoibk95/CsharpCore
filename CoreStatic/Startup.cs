@@ -22,7 +22,9 @@ namespace CoreStatic
 		{
 			Console.WriteLine(Calculator.Sum(1,2));
 			Console.WriteLine(Calculator.Type);
+			// Static contructor được gọi vì có static method DisplayInfo đưọc gọi
 			StopWatch.DisplayInfo();
+			// Nếu phương thức static k được gọi trước thì khi tạo instance đầu tiên nó sẽ gọi đến static contructor
 			StopWatch sw1 = new StopWatch();
 			StopWatch sw2 = new StopWatch();
 			Console.WriteLine(StopWatch.NoOfInstances); //2 

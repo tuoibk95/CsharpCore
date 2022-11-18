@@ -16,30 +16,30 @@ namespace SOLID.InterfaceSegregationPrinciple
         public string Type { get; set; }
 
         #region Apply business rules to subscribe to courses based on the course type.
-        public void Subscribe(Student std)
-        {
-            Logger.Log("Starting Subscribe()");
+        //public void Subscribe(Student std)
+        //{
+        //    Logger.Log("Starting Subscribe()");
 
-            //apply business rules based on the course type live, online, offline, if any 
-            if (this.Type == "online")
-            {
-                //subscribe to online course 
-            }
-            else if (this.Type == "live")
-            {
-                //subscribe to offline course 
-            }
+        //    //apply business rules based on the course type live, online, offline, if any 
+        //    if (this.Type == "online")
+        //    {
+        //        //subscribe to online course 
+        //    }
+        //    else if (this.Type == "live")
+        //    {
+        //        //subscribe to offline course 
+        //    }
 
-            // payment processing
-            PaymentManager.ProcessPayment();
+        //    // payment processing
+        //    PaymentManager.ProcessPayment();
 
-            //create CourseRepository class to save student and course into StudentCourse table  
+        //    //create CourseRepository class to save student and course into StudentCourse table  
 
-            // send confirmation email
-            EmailManager.SendEmail();
+        //    // send confirmation email
+        //    EmailManager.SendEmail();
 
-            Logger.Log("End Subscribe()");
-        }
+        //    Logger.Log("End Subscribe()");
+        //}
         #endregion
     }
 }

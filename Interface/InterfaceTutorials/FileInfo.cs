@@ -10,6 +10,8 @@ namespace Interface.InterfaceTutorials
 	/// The FileInfo class can also contain members other than interface members.
 	public class FileInfo : IFile
 	{
+		public string FileName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
 		public void ReadFile()
 		{
 			Console.WriteLine("Reading File");
