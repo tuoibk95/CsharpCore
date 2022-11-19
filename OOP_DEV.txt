@@ -1,0 +1,12 @@
+﻿#Steps for Developing Object-Oriented Applications
+
+Bắt đầu với: Buissiness request document.
+=>
+1- Abstract:
+	Xác định các entities thiết yếu và đặc điểm của chúng từ bussiness request (tìm danh từ vd như person...)
+2- Encapsulation: 
+	Triển khai tính trừu tượng code bằng cách tạo các classes và members với access modified phù hợp để ẩn và hiện chi tiết, độ phức tạp.
+3- Define relationship: 
+	Thiết lập mối quan hệ giữa các classes bằng cách sử dụng inheritance và polymorphism
+4- Use Principles & Patterns:
+	SOLID & Design pattern

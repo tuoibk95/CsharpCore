@@ -15,7 +15,17 @@ using OOP.Delegates.ActionDelegate;
 using OOP.Delegates.PredicateDelegate;
 using OOP.Events;
 
-// Name space đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
+/// <summary>
+/// Namespace đóng một vai trò quan trọng trong việc quản lý các lớp liên quan trong C#.
+/// OOP: một cách phát triển các ứng dụng phần mềm sử dụng các thuật ngữ trong thế giới thực để tạo ra các thực thể tương tác với nhau bằng cách sử dụng các object
+/// OOP: Làm cho các ứng dụng trở nên linh hoạt (dễ thay đổi or thêm các tính năng mới) có thể tái sử dụng, có cấu trúc tốt, dễ gỡ lỗi và kiểm tra
+/// Basic building blocks to build object-oriented applications =>
+/// 1: Classes: Định nghĩa cấu trúc bằng cách sử dụng methods and properties/fields giống với thực thể trong thế giới thực
+/// 2: Methods: đại diện cho 1 hành vi cụ thể,Nó thực hiện một số hành động và có thể trả về thông tin về một đối tượng
+/// 3: Properties: thuộc tính chứa data tạm thời trong giá trình thực thi ứng dụng
+/// 4: Objects: Các object là các thể hiện (instances) của lớp chứa data khác nhau trong các properties/fields và có thể tương tác với các đối tượng khác
+/// 5: Interface: 1 contract xác định bộ quy tắc cho một chức năng cụ thể. được sử dụng với các lớp theo OOP như kế thừa và đa hình làm cho app linh hoạt
+/// </summary>
 namespace OOP
 {
     /// <summary>
