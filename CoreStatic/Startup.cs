@@ -42,6 +42,9 @@ namespace CoreStatic
 		/// <param name="text"></param>
 		public static void Display(string text)
 		{
+			int i = 20;
+			// use IsGreaterThan extendsion method or static method  đặc biệt
+			Console.WriteLine(i.IsGreaterThan(34));
 			Console.WriteLine(text);
 		}
 	}
