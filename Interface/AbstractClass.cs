@@ -11,6 +11,7 @@ namespace Interface
 	{
 		protected int Age = 10;
 		public AbstractClass() { }
+		~AbstractClass() { }
 		public abstract void Speak1();
 		public void Speak2() { }
 	}
