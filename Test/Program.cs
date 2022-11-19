@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Test.TestNumber;
 using Test.Data;
+using Test.JSON;
 
 namespace Test
 {
@@ -28,6 +29,12 @@ namespace Test
 			// Viết gọn với ??
 			a = a ?? 0;
 			Console.WriteLine(a);
+			Console.WriteLine("+++++++++++++++++");
+			ObjectToJSON.TestObjectToJSON();
+			ObjectToJSON.TestObjectToJSONOption();
+
+			JSONToObject.ConvertJsonToObject();
+			JSONToObject.ConvertArrayJsonToObject();
 		}
 	}
 }

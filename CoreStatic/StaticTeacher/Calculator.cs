@@ -33,7 +33,7 @@ namespace CoreStatic.StaticTeacher
             _resultStorage = result;
         }
         /// <summary>
-        /// Extension method: Ở trong static class 
+        /// Extension method: Ở trong static class , static method có từ this keyword trước tham số đầu tiê
         /// </summary>
         /// <param name="i">this int i : tham số đầu tiên của extension method chỉ định kiểu mà nó sẽ chuyển sang toán tử, đứng trước từ khóa this</param>
         /// <param name="value"></param>
