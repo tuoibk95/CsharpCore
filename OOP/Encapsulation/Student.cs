@@ -10,6 +10,8 @@ namespace OOP.Encapsulation
     /// Allow validation before setting data.
     /// Only the author of the class needs to understand the implementation, not others.
     /// Makes applications easy to maintain.
+    /// 
+    /// we can implement encapsulation mostly using class, interface, abstract class, property, method, struct, enum, and access modifiers
     /// </summary>
     public class Student
     {

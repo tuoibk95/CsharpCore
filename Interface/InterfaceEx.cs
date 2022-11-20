@@ -19,6 +19,12 @@
 			Console.WriteLine(base.Age);
 		}
 
+		// Lớp kế thừa k cần thiết override virtual method nếu base class đã triển khai đúng và có thể dùng nó
+		// Khi override thì access modified phải giống base class
+		public override void Speak3()
+		{
+			Console.WriteLine("implement here");
+		}
 		public static void Main()
 		{
 			InterfaceEx s = new InterfaceEx();

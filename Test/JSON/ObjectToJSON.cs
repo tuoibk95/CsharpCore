@@ -26,5 +26,37 @@ namespace Test.JSON
 			string strJSON = JsonSerializer.Serialize<IList<Department>>(department, opt);
 			Console.WriteLine(strJSON);
 		}
+
+		public static void TestObject()
+		{
+			Student student = new Student()
+			{
+				StudentId = 1,
+				FirstName = "Le Van",
+				LastName = "Tuoi",
+				Courses = new Course() { CourseId = 1, Title = "Hello", Type = "convoi" }
+			};
+			var opt = new JsonSerializerOptions() { WriteIndented = true };
+			string strJSON = JsonSerializer.Serialize<Student>(student, opt);
+			Console.WriteLine(strJSON);
+		}
+
+		public static void TestObject2()
+		{
+			Student student = new Student()
+			{
+				StudentId = 1,
+				FirstName = "Le Van",
+				LastName = "Tuoi",
+				Courses = new Course() { CourseId = 1, Title = "Hello", Type = "convoi" },
+				Teachers = new List<Teacher>() {
+					new Teacher() { TeacherId = 1, TeacherName = "Hoho"},
+					new Teacher() { TeacherId = 1, TeacherName = "Haha"}
+				}
+			};
+			var opt = new JsonSerializerOptions() { WriteIndented = true };
+			string strJSON = JsonSerializer.Serialize<Student>(student, opt);
+			Console.WriteLine(strJSON);
+		}
 	}
 }
