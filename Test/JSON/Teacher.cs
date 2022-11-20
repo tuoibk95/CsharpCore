@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interface
+namespace Test.JSON
 {
-	public interface ISpeak
+	public class Teacher
 	{
-		// Interface không có contructor & k có destructor
-		void Speak();
+		public int TeacherId { get; set; }
+		public string TeacherName { get; set; }
 	}
 }

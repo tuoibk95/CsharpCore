@@ -35,6 +35,9 @@ namespace Test
 
 			JSONToObject.ConvertJsonToObject();
 			JSONToObject.ConvertArrayJsonToObject();
+
+			ObjectToJSON.TestObject();
+			ObjectToJSON.TestObject2();
 		}
 	}
 }
