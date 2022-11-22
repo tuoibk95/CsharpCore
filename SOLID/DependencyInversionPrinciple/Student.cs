@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SOLID.DependencyInversionPrinciple
+﻿namespace SOLID.DependencyInversionPrinciple
 {
 	public class Student
 	{
@@ -18,7 +12,7 @@ namespace SOLID.DependencyInversionPrinciple
         /// This will create loose coupling and also make each class unit testable.
         /// The caller of the Student class can pass an object of any class that implements the IStudentRepository interface and by so not tied to the specific concrete class.
         /// </summary>
-        private IStudentRepository _stdRepo;
+        private readonly IStudentRepository _stdRepo;
 
         /// <summary>
         /// The constructor requires a parameter of the IStudentRepository class which will be passed from the calling code.

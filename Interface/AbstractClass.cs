@@ -18,7 +18,9 @@ namespace Interface
 		/// Chỉ có trong abstract class
 		/// </summary>
 		public abstract void Speak1();
-		public void Speak2() { }
+		public void Speak2() {
+			Console.WriteLine("123");
+		}
 		/// <summary>
 		/// Nếu muốn lớp kế thừa có thể override thì thêm từ khóa virtual vào phương thức
 		/// Có trong cả lớp abstract và normal

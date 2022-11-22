@@ -22,8 +22,7 @@ namespace Microsoft.AdoNet.DataSetDemo
                 connection.Open();
                 Console.WriteLine("The SqlConnection is open.");
 
-                // Create a second Adapter and Command to get
-                // the Products table, a child table of Suppliers.
+                // Create a second Adapter and Command to get the Products table, a child table of Suppliers.
                 SqlDataAdapter productsAdapter = new SqlDataAdapter();
                 productsAdapter.TableMappings.Add("Table", "tbl_user");
 
@@ -31,7 +30,7 @@ namespace Microsoft.AdoNet.DataSetDemo
                 DataSet dataSet = new DataSet("tbl_user");
                 DataTable dt = new DataTable("tbl_user");
 
-                SqlCommand productsCommand = new SqlCommand("SELECT * FROM tbl_user;",connection);
+                SqlCommand productsCommand = new SqlCommand("SELECT * FROM tbl_user where ",connection);
                 productsAdapter.SelectCommand = productsCommand;
 
                 // Fill the DataSet.
@@ -63,10 +62,9 @@ namespace Microsoft.AdoNet.DataSetDemo
             }
         }
 
-        static private string GetConnectionString()
+        private static string GetConnectionString()
         {
-            // To avoid storing the connection string in your code,
-            // you can retrieve it from a configuration file.
+            // To avoid storing the connection string in your code, you can retrieve it from a configuration file.
             return "data source=TuoiLV;initial catalog=manageuser_01_lucvantien;persist security info=True;user id=sa;password=LVTdeveloper1;MultipleActiveResultSets=True;App=EntityFramework"
                 + "Integrated Security=SSPI";
         }
