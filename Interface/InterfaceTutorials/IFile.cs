@@ -9,7 +9,7 @@ namespace Interface.InterfaceTutorials
 	/// <summary>
 	/// An interface can contain declarations of methods, properties, indexers, and events.
 	/// Default interface methods with implementation body are supported from C# 8.0.
-	/// An interface cannot contain constructors and fields.
+	/// An interface cannot contain constructors, destructor and fields.
 	/// Interface members are by default abstract and public.
 	/// cannot apply access modifiers to interface members.
 	/// C# 8.0 onwards, you may use private, protected, internal, public, virtual, abstract, sealed, static, extern, and partial modifiers on certain conditions.

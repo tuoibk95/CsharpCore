@@ -1,27 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SOLID.InterfaceSegregationPrinciple
+﻿namespace SOLID.InterfaceSegregationPrinciple
 {
-    /// <summary>
-    /// Clients should not be forced to depend on methods they do not use.
-    /// who is the client?
-    /// - a client is a code that calls the methods of a class with an instance of the interface.
-    /// --- a class implements an interface that contains 10 methods.
-    /// --- you create an object of that class with a variable of that interface and call only 5 methods for the functionality you wanted and never call the other 5 methods.
-    /// this means that the interface contains more methods that are not used by all client codes.
-    /// 
-    /// ISP suggests segregating that interface into two or more interfaces so that a class can implement the specific interface that it requires.
-    /// what and whose methods it is talking about?
-    /// 
-    /// ISP is not specific to interfaces only but it can be used with abstract classes or any class that provides some services to the client code.
-    /// ISP helps in implementing Liskov Substitution Principle, increasing cohesion that in turn supports the Single Responsibility Principle.
-    /// </summary>
-    /// 
-    public interface I
+	/// <summary>
+	/// Clients should not be forced to depend on methods they do not use.
+	/// who is the client?
+	/// - a client is a code that calls the methods of a class with an instance of the interface.
+	/// --- a class implements an interface that contains 10 methods.
+	/// --- you create an object of that class with a variable of that interface and call only 5 methods for the functionality you wanted and never call the other 5 methods.
+	/// this means that the interface contains more methods that are not used by all client codes.
+	/// 
+	/// ISP suggests segregating that interface into two or more interfaces so that a class can implement the specific interface that it requires.
+	/// what and whose methods it is talking about?
+	/// 
+	/// ISP is not specific to interfaces only but it can be used with abstract classes or any class that provides some services to the client code.
+	/// ISP helps in implementing Liskov Substitution Principle, increasing cohesion that in turn supports the Single Responsibility Principle.
+	/// </summary>
+	/// 
+	public interface I
     {
         #region interface contains 12 methods for different purposes.
         /// <summary>
