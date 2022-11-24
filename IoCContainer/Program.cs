@@ -13,6 +13,7 @@ public class program
     /// Thay vì lái xe, thuê một taxi, một người khác sẽ lái xe => Điều này được gọi là inversion of the control: từ mình sang tài xế lái xe
     /// không cần tự lái xe mà đưa cho tài xế lái xe để mình có thể tập trung vào công việc chính của mình. (ủy quyền điều khiển xe cho tài xế)
     /// The IoC principle helps in designing loosely coupled classes which make them testable, maintainable and extensible.
+    ///     It manages object creation and it's life-time, and also injects dependencies to the class.
     /// 
     static void Main(string[] args)
     {
