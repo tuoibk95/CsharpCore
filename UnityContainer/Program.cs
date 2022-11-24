@@ -1,4 +1,8 @@
 ﻿using Unity;
+using UnityContainerEx.DIContainer;
+using UnityContainerEx.DIContainer.Implement;
+using UnityContainerEx.DIContainer.Interface;
+using UnityContainerEx.DIContainer.Mock;
 
 namespace UnityContainerEx;
 
@@ -6,7 +10,9 @@ public class Program
 {
 	public static void Main(String[] args)
 	{
-		UseUnityContainer();
+//		UseUnityContainer();
+		TestDIContainer();
+		Console.ReadLine();
 	}
 
 	public static void UseUnityContainer()
@@ -31,5 +37,19 @@ public class Program
 	public static void RegisterNamedType()
 	{
 
+	}
+
+	public static void TestDIContainer()
+	{
+		var myCart = new Cart(new Database(), new EmailSender(), new Logger());
+//		var myCart = new Cart(new XMLDatabase(), new FakeEmailSender(), new FakeLogger());
+		// Với mỗi interface ta định nghĩa 1 module tương ứng
+		DIContainers.SetModule<IDatabase, Database>();
+		DIContainers.SetModule<IEmailSender, EmailSender>();
+		DIContainers.SetModule<ILogger, Logger>();
+
+		DIContainers.SetModule<Cart, Cart>();
+		myCart = DIContainers.GetModule<Cart>();
+		myCart.Checkout(1,1);
 	}
 }
