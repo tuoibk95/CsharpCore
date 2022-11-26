@@ -4,6 +4,11 @@
 	/// Giống như array, LinkedList là 1 cấu trúc dữ liệu tuyến tính.
 	/// Không giống như mảng, các phần tử danh sách được liên kết không được lưu trữ tại một vị trí liền kề, các phần tử được liên kết bằng con trỏ.
 	/// Chúng bao gồm các node được kết nối, tại đây mỗi node lưu trũ dữ liệu và địa chỉ của node tiếp theo
+	/// 
+	/// Sử dụng khi yêu cầu insert / delete rất nhiều (stack và queue thêm vào và bớt đi liên tục nên dùng linked list rất tốt)
+	/// Các node nằm ở nhiều chỗ khác nhau và rãi rác khắp mọi nơi, và trong node có địa chỉ của node tiếp theo 
+	/// => k nhất thiết nằm trên 1 thanh ghi(thoải mái thêm xóa sửa)
+	/// 
 	/// </summary>
 	public class LinkedListEx
 	{
