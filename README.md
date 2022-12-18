@@ -16,16 +16,15 @@ Vào project mở cmd chạy lệnh sau
     <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
   </ItemGroup>
 
->docker run --name my-redis -p 5002:6379 -d redis
->docker ps -a
->docker exec -it my-redis sh
-> redis-cli
-> ping
-> select 0
-> dbsize
-> scan 0
-> hgetall ...
-> 
+docker run --name my-redis -p 5002:6379 -d redis
+docker ps -a
+docker exec -it my-redis sh
+ redis-cli
+ ping
+ select 0
+ dbsize
+ scan 0
+ hgetall ... 
 
  
 
