@@ -8,6 +8,24 @@ Quản lý source với GIT
 # chạy bằng lệnh
 Vào project mở cmd chạy lệnh sau
  dotnet run --urls http://localhost:5000
+ 
+#redis 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
+  </ItemGroup>
+
+>docker run --name my-redis -p 5002:6379 -d redis
+>docker ps -a
+>docker exec -it my-redis sh
+> redis-cli
+> ping
+> select 0
+> dbsize
+> scan 0
+> hgetall ...
+> 
 
  
 
