@@ -11,10 +11,10 @@ Vào project mở cmd chạy lệnh sau
  
 #redis 
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.0" />
-    <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
-  </ItemGroup>
+-  <ItemGroup>
+-    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.0" />
+-    <PackageReference Include="StackExchange.Redis" Version="2.6.86" />
+-  </ItemGroup>
 
 - docker run --name my-redis -p 5002:6379 -d redis
 - docker ps -a
