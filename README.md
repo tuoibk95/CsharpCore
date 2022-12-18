@@ -5,6 +5,10 @@ Zero to Hero
 # GIT
 Quản lý source với GIT
 
+# chạy bằng lệnh
+Vào project mở cmd chạy lệnh sau
+ dotnet run --urls http://localhost:5000
+
  
 
 Thực hành GIT:
