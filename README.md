@@ -1,6 +1,11 @@
 # Csharp Core Document
 Zero to Hero
 
+#build with docker
+1.tạo file Dockerfile
+2. runn command
+docker build -t cachingdemo -f CachingDemo/Dockerfile .
+docker run -p 9001:80 cachingdemo
 
 # GIT
 Quản lý source với GIT
