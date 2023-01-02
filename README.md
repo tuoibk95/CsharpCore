@@ -7,6 +7,33 @@ Zero to Hero
 docker build -t cachingdemo -f CachingDemo/Dockerfile .
 docker run -p 9001:80 cachingdemo
 
+# MICOSERVICE
+dotnet new webapi -o PlatformService --framework "net5.0"
+
+docker build -t 749395/platformservice .
+
+docker run -p 8080:80 -d 749395/platformservice
+
+docker stop containerId
+
+docker start
+
+docker push 749395/platformservice (docker hub id/ service name)
+
+
+
+kubectl version
+
+kubectl apply -f platforms-depl.yml
+
+kubectl get deployments
+
+kubectl get pods
+
+kubectl delete deployments platforms-depl
+
+kubectl apply -f platforms-np-srv.yaml
+
 # GIT
 Quản lý source với GIT
 
