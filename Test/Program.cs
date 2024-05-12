@@ -13,10 +13,28 @@ namespace Test
 	{
 		public static void Main(string[] args)
 		{
-			Test();
+			GrandFather person = new Son();
+            Console.WriteLine(person.Name());
+        }
+
+		public abstract class GrandFather
+		{
+			public virtual string Name()
+			{
+				return "Grand Father";
+			}
 		}
 
-		public static void Test()
+		public class Father : GrandFather {
+			public override string Name() { return "Father"; }
+		}
+
+        public class  Son : Father
+        {
+            public new string Name() { return "Son"; }
+        }
+
+        public static void Test()
 		{
 			TestNumber1 testNumber = new TestNumber1();
 			testNumber.TestNumberQuestion1();
